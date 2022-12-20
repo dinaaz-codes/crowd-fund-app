@@ -46,7 +46,7 @@ const useWeb3 = () => {
     return web3.utils.toDecimal(chainId);
   };
 
-  const createContract = async (abi: AbiItem[], contractAddress: string) => {
+  const createContract = (abi: AbiItem[], contractAddress: string) => {
     return new web3.eth.Contract(abi, contractAddress);
   };
 
