@@ -5,7 +5,7 @@ pragma solidity >=0.7.0 <0.9.0;
 contract CrowdFund {
 
     address public owner;
-    mapping(address=>uint256) contributions;
+    mapping(address=>uint256) public contributions;
     uint256 public allTimeContributions;
     string public fundName;
 
